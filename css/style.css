@@ -1,0 +1,77 @@
+@import url(./reset.css);
+
+body{
+    justify-content: center;
+    background-color: #000;
+}
+body,
+.container, 
+.dados-entrada,
+.enviar,
+.header {   
+    display: flex;  
+    align-items: center;
+}
+.container{
+    width: 600px;
+    height: 375px;
+    margin-top:60px ;
+    border: #8e8e8e solid 4px;
+    border-radius: 10px;
+    flex-direction: column;
+    /* background-image: linear-gradient(135deg, #3e3e3e 20%, #717171); */
+}
+.header #img{
+    width: 100px;
+    margin-left: 20px;
+}
+.container h1{
+    color: #fff;
+    padding: 20px;
+}
+.dados-entrada{
+    gap: 20px;
+    margin: 30px;
+    flex-direction: column;
+}
+.dados-entrada p{
+    color: #fff;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-style: normal;
+    margin-bottom: 2px;
+}
+.dados-entrada #nome, #xp{
+    background-color: transparent;
+    border:#8e8e8e solid 2px;
+    width: 500px;
+    height: 50px;
+}
+.dados-entrada #nome:focus, #xp:focus{
+    background-color: #8e8e8e;
+}
+
+.container button{
+    display: flex;
+    background-color: transparent;
+    width: 250px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-style: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #8e8e8e;
+    border: #8e8e8e solid 2px;    
+ }
+.container button:hover {
+    background-color: #8e8e8e;
+    color: #000;
+}
+
+
+
+
+
+
