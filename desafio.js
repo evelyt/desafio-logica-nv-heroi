@@ -13,22 +13,22 @@ function exibeMensagem(){
 }
 
 function defineNivelHeroi(campoXp){
-    nivelHeroi = 'Ferro';
+    nivelHeroi = 'Null';
     if(campoXp<1000){
         nivelHeroi = "Ferro";
-    }else if(campoXp>1001 && campoXp<2000){
+    }if(campoXp>1001 && campoXp<2000){
         nivelHeroi = "Bronze";
-    }else if(campoXp>2001 && campoXp<5000){
+    }if(campoXp>2001){
         nivelHeroi = "Prata";
-    }else if(campoXp>5001 && campoXp<7000){
+    }if(campoXp>=5001){
         nivelHeroi = "Ouro";
-    }else if(campoXp>7001 && campoXp<8000){
+    }if(campoXp>=7001){
         nivelHeroi = "Platina";
-    }else if(campoXp>8001 && campoXp<9000){
+    } if(campoXp>=8001 ){
         nivelHeroi = "Ascendente";
-    }else if(campoXp>9001 && campoXp<10000){
+    } if(campoXp>=9001){
         nivelHeroi = "Imortal";
-    }else if(campoXp>=10001){
+    }if(campoXp>=10001){
         nivelHeroi = "Radiante";
     }
     return nivelHeroi;
